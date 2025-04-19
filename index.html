@@ -1,0 +1,39 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Andi</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Gunakan ini untuk development -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Atau jika sudah build, otomatis dari Vite -->
+    <!-- <script type="module" crossorigin src="/Portfolio_Andi/assets/index-xxxxx.js"></script> -->
+
+    <script src="/vendors/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        'touchNavigation': true,
+        'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+        'type': 'video',
+        'source': 'youtube',
+        'width': 900,
+        'autoPlayVideos': 'true',
+      });
+    </script>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
